@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://dodge_assets/art/joystick.250.png" type="Texture" id=1]
+[ext_resource path="res://Joystick.gd" type="Script" id=2]
+
+[node name="Joystick" type="TouchScreenButton"]
+position = Vector2( 350, 590 )
+scale = Vector2( 0.5, 0.5 )
+normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Analog" type="Sprite" parent="."]
+texture = ExtResource( 1 )
