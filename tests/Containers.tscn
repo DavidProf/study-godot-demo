@@ -1,0 +1,316 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.371094, 0.0115967, 0.0115967, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="PanelContainer" parent="."]
+margin_left = 256.0
+margin_right = 384.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( -608, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 2.0
+margin_top = 57.0
+margin_right = 126.0
+margin_bottom = 71.0
+size_flags_horizontal = 5
+text = "EL"
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_bottom = 1.0
+margin_right = 128.0
+margin_bottom = -372.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="PanelContainer" parent="CenterContainer"]
+margin_left = 10.0
+margin_top = 55.0
+margin_right = 117.0
+margin_bottom = 73.0
+rect_pivot_offset = Vector2( -608, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CenterContainer/Panel2"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 105.0
+margin_bottom = 16.0
+size_flags_horizontal = 5
+text = "CenterContainer"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_left = 128.0
+margin_right = 256.0
+margin_bottom = 128.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MarginContainer"]
+margin_top = 57.0
+margin_right = 128.0
+margin_bottom = 71.0
+text = "Label1"
+
+[node name="Label2" type="Label" parent="MarginContainer"]
+margin_top = 57.0
+margin_right = 128.0
+margin_bottom = 71.0
+text = "MarginContainer"
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_left = 256.0
+margin_right = 384.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( -552, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PanelContainer"]
+margin_left = 2.0
+margin_top = 57.0
+margin_right = 126.0
+margin_bottom = 71.0
+size_flags_horizontal = 5
+text = "PanelContainer"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_top = 128.0
+margin_right = 128.0
+margin_bottom = 256.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="PanelContainer" parent="VBoxContainer"]
+margin_right = 133.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -608, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/Panel2"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 131.0
+margin_bottom = 16.0
+size_flags_horizontal = 5
+text = "VBoxContainer (el.1)"
+
+[node name="Panel3" type="PanelContainer" parent="VBoxContainer"]
+margin_top = 18.0
+margin_right = 133.0
+margin_bottom = 36.0
+rect_pivot_offset = Vector2( -608, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/Panel3"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 131.0
+margin_bottom = 16.0
+size_flags_horizontal = 5
+text = "VBoxContainer (el.2)"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 128.0
+margin_top = 128.0
+margin_right = 256.0
+margin_bottom = 256.0
+custom_constants/separation = 16
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="PanelContainer" parent="HBoxContainer"]
+margin_left = 10.0
+margin_right = 56.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( -608, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel2"]
+margin_left = 2.0
+margin_top = 57.0
+margin_right = 44.0
+margin_bottom = 71.0
+size_flags_horizontal = 5
+text = "HBox1"
+
+[node name="Panel3" type="PanelContainer" parent="HBoxContainer"]
+margin_left = 72.0
+margin_right = 118.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( -608, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel3"]
+margin_left = 2.0
+margin_top = 57.0
+margin_right = 44.0
+margin_bottom = 71.0
+size_flags_horizontal = 5
+text = "HBox2"
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 256.0
+margin_top = 128.0
+margin_right = 448.0
+margin_bottom = 256.0
+custom_constants/vseparation = 16
+custom_constants/hseparation = 8
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="PanelContainer" parent="GridContainer"]
+margin_right = 128.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -552, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GridContainer/Panel2"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 126.0
+margin_bottom = 16.0
+size_flags_horizontal = 5
+text = "GridContainer (el.1)"
+
+[node name="Panel5" type="PanelContainer" parent="GridContainer"]
+margin_left = 136.0
+margin_right = 154.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -552, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GridContainer/Panel5"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 16.0
+margin_bottom = 16.0
+size_flags_horizontal = 5
+text = "EL"
+
+[node name="Panel4" type="PanelContainer" parent="GridContainer"]
+margin_top = 34.0
+margin_right = 128.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( -552, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GridContainer/Panel4"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 126.0
+margin_bottom = 16.0
+size_flags_horizontal = 5
+text = "EL"
+
+[node name="Panel3" type="PanelContainer" parent="GridContainer"]
+margin_left = 136.0
+margin_top = 34.0
+margin_right = 154.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( -552, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GridContainer/Panel3"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 16.0
+margin_bottom = 16.0
+size_flags_horizontal = 5
+text = "EL"
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+margin_top = 256.0
+margin_right = 128.0
+margin_bottom = 384.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="PanelContainer" parent="VSplitContainer"]
+margin_right = 128.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -608, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VSplitContainer/Panel2"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 126.0
+margin_bottom = 16.0
+size_flags_horizontal = 5
+text = "EL"
+
+[node name="Panel3" type="PanelContainer" parent="VSplitContainer"]
+margin_top = 30.0
+margin_right = 128.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( -608, 256 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VSplitContainer/Panel3"]
+margin_left = 2.0
+margin_top = 42.0
+margin_right = 126.0
+margin_bottom = 56.0
+size_flags_horizontal = 5
+text = "EL"
