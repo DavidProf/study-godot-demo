@@ -18,15 +18,19 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("ui_right"):
 		$AnimatedSprite.flip_h = false
+		$AnimatedSprite.offset.x = 160
 		$AnimatedSprite.play("Run")
 		motion.x = min(motion.x + ACCELERATION, MAX_SPEED)
 	elif Input.is_action_pressed("ui_left"):
+		$AnimatedSprite.offset.x = -160
 		$AnimatedSprite.flip_h = true
 		$AnimatedSprite.play("Run")
 		motion.x = max(motion.x - ACCELERATION, -MAX_SPEED)
 	else:
-		$AnimatedSprite.play("Idle")
+		if is_on_floor():
+			$AnimatedSprite.play("Idle")
 		friction = true
+		
 	
 	if is_on_floor():
 		if Input.is_action_pressed("ui_up"):

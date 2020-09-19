@@ -1,53 +1,80 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/Player/Run0.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Player/Jump3.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Player/Run1.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Player/Run4.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Player/Run3.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Player/Run2.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Player/Run7.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/Player/Idle0.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/Player/Jump1.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/flatboy/Run (5).png" type="Texture" id=2]
+[ext_resource path="res://Sprites/flatboy/Jump (10).png" type="Texture" id=3]
+[ext_resource path="res://Sprites/flatboy/Run (4).png" type="Texture" id=4]
+[ext_resource path="res://Sprites/flatboy/Run (2).png" type="Texture" id=5]
+[ext_resource path="res://Sprites/flatboy/Run (3).png" type="Texture" id=6]
+[ext_resource path="res://Sprites/flatboy/Run (1).png" type="Texture" id=7]
+[ext_resource path="res://Sprites/flatboy/Run (6).png" type="Texture" id=8]
+[ext_resource path="res://Sprites/flatboy/Run (7).png" type="Texture" id=9]
+[ext_resource path="res://Sprites/flatboy/Jump (15).png" type="Texture" id=10]
+[ext_resource path="res://Sprites/flatboy/Idle (1).png" type="Texture" id=11]
+[ext_resource path="res://Sprites/flatboy/Idle (7).png" type="Texture" id=12]
+[ext_resource path="res://Sprites/flatboy/Idle (8).png" type="Texture" id=13]
+[ext_resource path="res://Sprites/flatboy/Idle (9).png" type="Texture" id=14]
+[ext_resource path="res://Sprites/flatboy/Idle (6).png" type="Texture" id=15]
+[ext_resource path="res://Sprites/flatboy/Idle (4).png" type="Texture" id=16]
+[ext_resource path="res://Sprites/flatboy/Idle (3).png" type="Texture" id=17]
+[ext_resource path="res://Sprites/flatboy/Idle (2).png" type="Texture" id=18]
+[ext_resource path="res://Sprites/flatboy/Idle (5).png" type="Texture" id=19]
+[ext_resource path="res://Sprites/flatboy/Idle (10).png" type="Texture" id=20]
+[ext_resource path="res://Sprites/flatboy/Idle (11).png" type="Texture" id=21]
+[ext_resource path="res://Sprites/flatboy/Idle (12).png" type="Texture" id=22]
+[ext_resource path="res://Sprites/flatboy/Idle (13).png" type="Texture" id=23]
+[ext_resource path="res://Sprites/flatboy/Idle (14).png" type="Texture" id=24]
+[ext_resource path="res://Sprites/flatboy/Idle (15).png" type="Texture" id=25]
+[ext_resource path="res://Sprites/flatboy/Run (8).png" type="Texture" id=26]
+[ext_resource path="res://Sprites/flatboy/Run (10).png" type="Texture" id=27]
+[ext_resource path="res://Sprites/flatboy/Run (9).png" type="Texture" id=28]
+[ext_resource path="res://Sprites/flatboy/Run (12).png" type="Texture" id=29]
+[ext_resource path="res://Sprites/flatboy/Run (11).png" type="Texture" id=30]
+[ext_resource path="res://Sprites/flatboy/Run (13).png" type="Texture" id=31]
+[ext_resource path="res://Sprites/flatboy/Run (14).png" type="Texture" id=32]
+[ext_resource path="res://Sprites/flatboy/Run (15).png" type="Texture" id=33]
+[ext_resource path="res://Sprites/flatboy/Jump (14).png" type="Texture" id=34]
+[ext_resource path="res://Sprites/flatboy/Jump (13).png" type="Texture" id=35]
+[ext_resource path="res://Sprites/flatboy/Jump (12).png" type="Texture" id=36]
+[ext_resource path="res://Sprites/flatboy/Jump (11).png" type="Texture" id=37]
+[ext_resource path="res://Sprites/flatboy/Jump (9).png" type="Texture" id=38]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
+"frames": [ ExtResource( 38 ), ExtResource( 3 ), ExtResource( 37 ), ExtResource( 36 ), ExtResource( 35 ), ExtResource( 34 ), ExtResource( 10 ) ],
+"loop": false,
 "name": "Fall",
-"speed": 5.0
+"speed": 14.0
 }, {
-"frames": [ ExtResource( 9 ) ],
+"frames": [ ExtResource( 11 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 19 ), ExtResource( 15 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
 "loop": true,
 "name": "Idle",
-"speed": 5.0
+"speed": 24.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "Run",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 10 ) ],
-"loop": true,
+"frames": [ ExtResource( 3 ) ],
+"loop": false,
 "name": "Jump",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 27 ), ExtResource( 30 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Run",
+"speed": 24.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=3]
+[sub_resource type="CapsuleShape2D" id=2]
 radius = 16.0
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -8 )
-frames = SubResource( 2 )
+scale = Vector2( 0.1, 0.1 )
+frames = SubResource( 1 )
 animation = "Fall"
+frame = 6
 playing = true
+offset = Vector2( 160, 40 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 3 )
+shape = SubResource( 2 )
